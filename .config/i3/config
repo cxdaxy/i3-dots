@@ -30,7 +30,7 @@ client.placeholder	  	#24273a #24273a #24273a #24273a
 #--- AUTOSTART ---------------------------------------------------
 exec --no-startup-id picom
 exec --no-startup-id feh --bg-scale ~/.config/i3/wallpapers/wallpaper.png
-
+exec --no-startup-id ~/.config/polybar/launch.sh
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id nm-applet
 
@@ -169,22 +169,3 @@ mode "resize" {
 
 #--- ENTER RESIZE MODE -------------------------------------------
 bindsym $mod+r mode "resize"
-
-#--- ENABLE I3BAR ------------------------------------------------
-bar {
-        status_command i3status
-        font pango:JetBrains Mono 10
-        height 28
-        tray_output primary
-
-        colors {
-                background #24273a    
-                statusline #cad3f5    
-                separator #5b6078     
-        
-                focused_workspace  #c6a0f6 #181926
-                active_workspace   #363a4f #cad3f5
-                inactive_workspace #1e2030 #6e738d
-                urgent_workspace   #ed8796 #181926
-        }
-}
