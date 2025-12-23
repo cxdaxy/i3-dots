@@ -1,0 +1,19 @@
+[window]
+padding = { x=5, y=5 }
+decorations="None"
+opacity = 0.9
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+normal.family = "JetBrains Mono Medium"
+bold.family = "JetBrains Mono Medium"
+italic.family = "JetBrains Mono Medium"
+bold_italic.family = "JetBrains Mono Medium"
+size = 14.0
+
+[general]
+import = [
+  "~/.config/alacritty/catppuccin-macchiato.toml"
+]

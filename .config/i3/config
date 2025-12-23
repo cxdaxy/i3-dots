@@ -48,7 +48,7 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 #--- APPLICATION LAUNCHING ---------------------------------------
-bindsym $mod+Return exec kitty -1
+bindsym $mod+Return exec alacritty
 bindsym $mod+Shift+s exec flameshot gui
 bindsym $mod+space exec rofi -show  drun
 
